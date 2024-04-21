@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "37af733c-4ad0-4fa5-8843-23255d2b1370",
+		"name": "bank_application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15328278"
+	},
+	"item": [
+		{
+			"name": "Transfer_funds",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromAccountNumber\": \"12345678\",\r\n    \"toAccountNumber\": \"88888888\",\r\n    \"transferAmount\":\"999810.0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/transfer/12345678",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transfer",
+						"12345678"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Balance",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
